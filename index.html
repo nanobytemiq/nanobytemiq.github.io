@@ -2,634 +2,288 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="LaySoftware develops mobile applications, games and software solutions focused on useful experiences, creativity, security and modern technology."
-    >
-
-    <meta
-        name="keywords"
-        content="LaySoftware, software development, mobile apps, Android apps, mobile games, cybersecurity, software solutions, app development, game development"
-    >
-
-    <meta
-        name="author"
-        content="LaySoftware"
-    >
-
-    <meta
-        name="theme-color"
-        content="#000000"
-    >
-
-    <title>LaySoftware — Software, Apps & Games</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LaySoftware builds software, mobile apps, games, websites, CLI tools and secure digital products. We also provide penetration testing, reverse engineering, mobile and web security testing, and digital forensics.">
+    <meta name="keywords" content="LaySoftware, software development, mobile apps, games, websites, CLI tools, cybersecurity, penetration testing, web pentesting, mobile pentesting, reverse engineering, digital forensics">
+    <meta name="author" content="LaySoftware">
+    <meta name="theme-color" content="#07070a">
+    <meta property="og:title" content="LaySoftware — Software, Games & Cybersecurity">
+    <meta property="og:description" content="We build software and help protect it. Mobile apps, games, websites, CLI tools and cybersecurity services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://laysoftware.com/">
+    <title>LaySoftware — Software, Games & Cybersecurity</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- Navigation -->
     <header class="navbar">
         <div class="container nav-container">
-
-            <a href="#home" class="logo">
+            <a href="#home" class="logo" aria-label="LaySoftware home">
                 <span class="logo-mark">L</span>
                 <span>Lay<strong>Software</strong></span>
             </a>
-
-            <nav class="nav-links">
+            <nav class="nav-links" aria-label="Primary navigation">
                 <a href="#home">Home</a>
-                <a href="#about">About</a>
+                <a href="#services">Services</a>
                 <a href="#apps">Apps</a>
                 <a href="#games">Games</a>
-                <a href="#technology">Technology</a>
+                <a href="#security">Security</a>
+                <a href="#team">Team</a>
                 <a href="#contact">Contact</a>
             </nav>
-
-            <button
-                class="menu-button"
-                id="menuButton"
-                aria-label="Open menu"
-            >
-                ☰
-            </button>
-
+            <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">☰</button>
         </div>
     </header>
 
-
     <main>
-
-        <!-- Hero -->
         <section class="hero" id="home">
-
             <div class="hero-background"></div>
-
+            <div class="hero-grid"></div>
             <div class="container hero-content">
-
                 <div class="hero-text">
-
-                    <div class="badge">
-                        <span class="status-dot"></span>
-                        Building digital experiences
-                    </div>
-
-                    <h1>
-                        We build software.
-                        <span>We create experiences.</span>
-                    </h1>
-
-                    <p>
-                        LaySoftware is a software development company focused
-                        on creating mobile applications, games and modern
-                        digital solutions that are useful, reliable and
-                        built with modern technology.
-                    </p>
-
+                    <div class="badge"><span class="status-dot"></span> Building. Shipping. Securing.</div>
+                    <h1>We build software.<span>We protect what we build.</span></h1>
+                    <p>LaySoftware creates useful digital products — from mobile apps and games to websites, CLI tools and business software — while helping organizations find and fix security weaknesses.</p>
                     <div class="hero-buttons">
-
-                        <a href="#apps" class="button primary">
-                            Explore our apps
-                        </a>
-
-                        <a href="#about" class="button secondary">
-                            Learn more
-                        </a>
-
+                        <a href="#apps" class="button primary">Explore our products <span>→</span></a>
+                        <a href="#security" class="button secondary">Explore cybersecurity</a>
                     </div>
-
+                    <div class="hero-stats">
+                        <div><strong>Apps</strong><span>Built for real users</span></div>
+                        <div><strong>Games</strong><span>Designed to entertain</span></div>
+                        <div><strong>Security</strong><span>Tested with purpose</span></div>
+                    </div>
                 </div>
-
 
                 <div class="hero-visual">
-
                     <div class="orb orb-one"></div>
                     <div class="orb orb-two"></div>
-
                     <div class="code-card">
-
                         <div class="code-header">
-
-                            <div class="window-dots">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-
-                            <span>laysoftware</span>
-
+                            <div class="window-dots"><span></span><span></span><span></span></div>
+                            <span>laysoftware / mission</span>
                         </div>
-
                         <div class="code-body">
-
-                            <p>
-                                <span class="code-purple">class</span>
-                                <span class="code-blue">LaySoftware</span>
-                                {
-                            </p>
-
-                            <p class="indent">
-
-                                <span class="code-purple">const</span>
-                                mission =
-                                <span class="code-green">
-                                    "Build & Innovate";
-                                </span>
-
-                            </p>
-
-                            <p class="indent">
-
-                                <span class="code-purple">const</span>
-                                products = [
-
-                            </p>
-
-                            <p class="indent2">
-                                <span class="code-green">
-                                    "Software"
-                                </span>,
-                            </p>
-
-                            <p class="indent2">
-                                <span class="code-green">
-                                    "Mobile Apps"
-                                </span>,
-                            </p>
-
-                            <p class="indent2">
-                                <span class="code-green">
-                                    "Games"
-                                </span>
-                            </p>
-
-                            <p class="indent">];</p>
-
-                            <p>}</p>
-
+                            <p><span class="code-purple">const</span> company = <span class="code-green">"LaySoftware"</span>;</p>
+                            <p><span class="code-purple">const</span> build = [</p>
+                            <p class="indent2"><span class="code-green">"Mobile Apps"</span>,</p>
+                            <p class="indent2"><span class="code-green">"Games"</span>,</p>
+                            <p class="indent2"><span class="code-green">"Websites"</span>,</p>
+                            <p class="indent2"><span class="code-green">"CLI Tools"</span>,</p>
+                            <p class="indent2"><span class="code-green">"Business Software"</span></p>
+                            <p>];</p>
+                            <p><span class="code-purple">const</span> protect = [</p>
+                            <p class="indent2"><span class="code-green">"Penetration Testing"</span>,</p>
+                            <p class="indent2"><span class="code-green">"Reverse Engineering"</span>,</p>
+                            <p class="indent2"><span class="code-green">"Digital Forensics"</span></p>
+                            <p>];</p>
                             <div class="terminal-cursor"></div>
-
                         </div>
-
                     </div>
-
+                    <div class="floating-chip chip-one">APP DEVELOPMENT</div>
+                    <div class="floating-chip chip-two">CYBERSECURITY</div>
                 </div>
-
             </div>
-
         </section>
 
+        <section class="trust-strip">
+            <div class="container trust-grid">
+                <span>Software Engineering</span><span>Mobile Development</span><span>Game Development</span><span>Cybersecurity</span><span>Digital Products</span>
+            </div>
+        </section>
 
-        <!-- About -->
-        <section class="section about" id="about">
-
+        <section class="section" id="services">
             <div class="container">
-
                 <div class="section-heading">
-
-                    <span class="section-label">
-                        01 — ABOUT US
-                    </span>
-
-                    <h2>
-                        Technology built around
-                        <span>ideas.</span>
-                    </h2>
-
-                    <p>
-                        LaySoftware is an independent software development
-                        company creating digital products, mobile
-                        applications, games and technology solutions.
-                    </p>
-
+                    <span class="section-label">01 — WHAT WE DO</span>
+                    <h2>From an idea to a <span>secure product.</span></h2>
+                    <p>We design and build practical digital products, then think about the security, reliability and experience that make them ready for real-world use.</p>
                 </div>
-
-
-                <div class="about-grid">
-
-                    <div class="about-card">
-
-                        <div class="card-icon">📱</div>
-
+                <div class="services-grid">
+                    <article class="service-card featured">
+                        <div class="service-icon">⌘</div><span class="service-number">01</span>
+                        <h3>Software Development</h3>
+                        <p>Custom software, internal tools and digital products engineered around your business goals.</p>
+                        <ul><li>Product architecture</li><li>Application development</li><li>APIs & integrations</li><li>Maintenance & improvement</li></ul>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">▣</div><span class="service-number">02</span>
                         <h3>Mobile Apps</h3>
-
-                        <p>
-                            We create practical and polished mobile
-                            applications designed to solve real problems
-                            and make everyday tasks easier.
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-card">
-
-                        <div class="card-icon">🎮</div>
-
+                        <p>Modern Android and cross-platform mobile applications focused on useful experiences.</p>
+                        <ul><li>Business apps</li><li>Utility apps</li><li>Offline-first experiences</li><li>Play Store preparation</li></ul>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">◈</div><span class="service-number">03</span>
+                        <h3>Websites</h3>
+                        <p>Fast, responsive websites and web experiences for companies, products and communities.</p>
+                        <ul><li>Company websites</li><li>Product websites</li><li>Responsive UI</li><li>Static & modern web stacks</li></ul>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">▶</div><span class="service-number">04</span>
                         <h3>Games</h3>
-
-                        <p>
-                            We develop games that combine gameplay,
-                            creativity and technology to create memorable
-                            experiences for players.
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-card">
-
-                        <div class="card-icon">⚡</div>
-
-                        <h3>Innovation</h3>
-
-                        <p>
-                            We explore modern technologies and continuously
-                            develop new ideas in software, digital products
-                            and interactive entertainment.
-                        </p>
-
-                    </div>
-
+                        <p>Games built around exploration, challenge and memorable interactive experiences.</p>
+                        <ul><li>Mobile games</li><li>Gameplay systems</li><li>Game UI</li><li>Prototyping</li></ul>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">&gt;_</div><span class="service-number">05</span>
+                        <h3>CLI Tools</h3>
+                        <p>Command-line utilities that automate repetitive work and give developers powerful workflows.</p>
+                        <ul><li>Developer tooling</li><li>Automation</li><li>System utilities</li><li>Custom command workflows</li></ul>
+                    </article>
+                    <article class="service-card security-service">
+                        <div class="service-icon">⌁</div><span class="service-number">06</span>
+                        <h3>Cybersecurity</h3>
+                        <p>Security testing and technical investigation to help uncover weaknesses before attackers do.</p>
+                        <ul><li>Web penetration testing</li><li>Mobile penetration testing</li><li>Reverse engineering</li><li>Digital forensics</li></ul>
+                    </article>
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- Apps -->
         <section class="section products" id="apps">
-
             <div class="container">
-
-                <div class="section-heading">
-
-                    <span class="section-label">
-                        02 — APPLICATIONS
-                    </span>
-
-                    <h2>
-                        Apps made to be
-                        <span>useful.</span>
-                    </h2>
-
-                    <p>
-                        Explore applications developed by LaySoftware.
-                    </p>
-
+                <div class="section-heading split-heading">
+                    <div><span class="section-label">02 — MOBILE APPLICATIONS</span><h2>Products people can <span>use.</span></h2></div>
+                    <p>Released apps are ready to explore on Google Play. Our upcoming products show where the LaySoftware product portfolio is heading next.</p>
                 </div>
 
-
-                <div class="product-grid">
-
-                    <article class="product-card">
-
-                        <div class="product-image app-placeholder">
-                            <span>APP</span>
-                        </div>
-
-                        <div class="product-content">
-
-                            <span class="product-type">
-                                MOBILE APPLICATION
-                            </span>
-
-                            <h3>My Links</h3>
-
-                            <p>
-                                Save, organize and manage your important
-                                links in one simple and convenient place.
-                            </p>
-
-                            <a
-                                href="#"
-                                class="product-link"
-                            >
-                                View app →
-                            </a>
-
-                        </div>
-
+                <div class="subheading"><span class="live-dot"></span><h3>Available on Google Play</h3></div>
+                <div class="product-grid released-grid">
+                    <article class="product-card released">
+                        <div class="product-image"><img src="icons/Stock Base.png" alt="Stock Base app icon" onerror="this.style.display='none'"><span class="fallback-icon">SB</span><span class="status-pill">LIVE</span></div>
+                        <div class="product-content"><span class="product-type">BUSINESS · INVENTORY</span><h3>Stock Base</h3><p>Manage inventory, stock records, sales and essential business information from your phone.</p><a class="product-link" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.rashidomar.pocket_inventor">Get on Google Play →</a></div>
                     </article>
-
-
-                    <article class="product-card">
-
-                        <div class="product-image app-placeholder">
-                            <span>APP</span>
-                        </div>
-
-                        <div class="product-content">
-
-                            <span class="product-type">
-                                MOBILE APPLICATION
-                            </span>
-
-                            <h3>Stock Base</h3>
-
-                            <p>
-                                A practical solution for managing inventory,
-                                stock records, sales and business information.
-                            </p>
-
-                            <a
-                                href="#"
-                                class="product-link"
-                            >
-                                View app →
-                            </a>
-
-                        </div>
-
+                    <article class="product-card released">
+                        <div class="product-image"><img src="icons/Link Space.png" alt="Link Space app icon" onerror="this.style.display='none'"><span class="fallback-icon">LS</span><span class="status-pill">LIVE</span></div>
+                        <div class="product-content"><span class="product-type">PRODUCTIVITY · LINKS</span><h3>Link Space</h3><p>Save, organize and manage important links in one simple, convenient place.</p><a class="product-link" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.rashidomar.my_links">Get on Google Play →</a></div>
                     </article>
-
-
-                    <article class="product-card">
-
-                        <div class="product-image app-placeholder">
-                            <span>APP</span>
-                        </div>
-
-                        <div class="product-content">
-
-                            <span class="product-type">
-                                MOBILE APPLICATION
-                            </span>
-
-                            <h3>More Apps</h3>
-
-                            <p>
-                                We are continuously building new tools,
-                                applications and software solutions for
-                                modern users.
-                            </p>
-
-                            <a
-                                href="#contact"
-                                class="product-link"
-                            >
-                                Stay updated →
-                            </a>
-
-                        </div>
-
-                    </article>
-
                 </div>
 
+                <div class="subheading upcoming-heading"><span class="pulse-dot"></span><h3>Upcoming applications</h3><span class="roadmap-note">In development</span></div>
+                <div class="product-grid upcoming-grid" id="upcomingApps"></div>
             </div>
-
         </section>
 
-
-        <!-- Games -->
         <section class="section games-section" id="games">
-
             <div class="container">
-
-                <div class="section-heading">
-
-                    <span class="section-label">
-                        03 — GAMES
-                    </span>
-
-                    <h2>
-                        Enter the
-                        <span>game world.</span>
-                    </h2>
-
-                    <p>
-                        We build mobile games focused on exploration,
-                        challenge, creativity and fun.
-                    </p>
-
+                <div class="section-heading split-heading">
+                    <div><span class="section-label">03 — GAMES</span><h2>Built for <span>adventure.</span></h2></div>
+                    <p>We create games that turn ideas into interactive worlds — from treasure hunting to fast-paced challenges.</p>
                 </div>
-
 
                 <div class="game-feature">
-
-                    <div class="game-visual">
-
-                        <div class="game-logo">
-                            <span>LEGENDS</span>
-                            <strong>OF FORTUNE</strong>
-                        </div>
-
-                        <div class="game-coins">
-                            <span>●</span>
-                            <span>●</span>
-                            <span>●</span>
-                        </div>
-
+                    <div class="game-visual treasure">
+                        <img src="icons/LegendsOfFortune.png" alt="Treasure Raiders game icon" onerror="this.style.display='none'">
+                        <div class="game-shine"></div>
+                        <div class="game-title-art"><small>TREASURE</small><strong>RAIDERS</strong></div>
                     </div>
-
-
                     <div class="game-info">
-
-                        <span class="product-type">
-                            MOBILE GAME
-                        </span>
-
-                        <h3>Legends of Fortune</h3>
-
-                        <p>
-                            Explore worlds, collect treasures and take
-                            on challenges in an adventure built for
-                            mobile players.
-                        </p>
-
-                        <div class="game-tags">
-
-                            <span>Adventure</span>
-                            <span>3D</span>
-                            <span>Mobile</span>
-
-                        </div>
-
-                        <a
-                            href="#"
-                            class="button primary"
-                        >
-                            Coming soon
-                        </a>
-
+                        <span class="product-type">AVAILABLE GAME</span>
+                        <h3>Treasure Raiders</h3>
+                        <p>Set out for treasure, face challenges and explore an adventure built for mobile players.</p>
+                        <div class="game-tags"><span>Adventure</span><span>Mobile</span><span>Action</span></div>
+                        <a href="https://play.google.com/store/apps/details?id=com.rashidomar.LegendsOfFortune" target="_blank" rel="noopener" class="button primary">Play on Google Play →</a>
+                        <small class="package-label">Package: com.rashidomar.LegendsOfFortune</small>
                     </div>
-
                 </div>
 
+                <div class="game-roadmap">
+                    <div><span class="product-type">COMING NEXT</span><h3>Speed World</h3><p>A future high-speed mobile game project currently in development.</p><span class="package-label">com.rashidomar.speed_world</span></div>
+                    <div class="roadmap-icon">↯</div>
+                </div>
             </div>
-
         </section>
 
-
-        <!-- Technology -->
-        <section
-            class="section technology"
-            id="technology"
-        >
-
+        <section class="section security-section" id="security">
             <div class="container">
-
-                <div class="tech-content">
-
+                <div class="security-intro">
                     <div>
-
-                        <span class="section-label">
-                            04 — TECHNOLOGY
-                        </span>
-
-                        <h2>
-                            Built with modern
-                            <span>technology.</span>
-                        </h2>
-
-                        <p>
-                            Our development process combines modern
-                            programming languages, frameworks and
-                            development tools to build reliable,
-                            scalable and engaging digital products.
-                        </p>
-
+                        <span class="section-label">04 — CYBERSECURITY</span>
+                        <h2>Build with confidence.<br><span>Test before attackers do.</span></h2>
                     </div>
-
-
-                    <div class="tech-grid">
-
-                        <div class="tech-item">
-                            <strong>Flutter</strong>
-                            <span>Mobile Development</span>
-                        </div>
-
-                        <div class="tech-item">
-                            <strong>Unity</strong>
-                            <span>Game Development</span>
-                        </div>
-
-                        <div class="tech-item">
-                            <strong>Godot</strong>
-                            <span>Game Development</span>
-                        </div>
-
-                        <div class="tech-item">
-                            <strong>Kotlin</strong>
-                            <span>Android</span>
-                        </div>
-
-                        <div class="tech-item">
-                            <strong>Rust</strong>
-                            <span>Systems & Backend</span>
-                        </div>
-
-                        <div class="tech-item">
-                            <strong>TypeScript</strong>
-                            <span>Web Development</span>
-                        </div>
-
-                    </div>
-
+                    <p>Security is part of good software engineering. LaySoftware performs focused technical security assessments to identify weaknesses, understand attack paths and improve resilience.</p>
                 </div>
-
+                <div class="security-grid">
+                    <article class="security-card"><span>01</span><div class="security-icon">↔</div><h3>Reverse Engineering</h3><p>Analyze software behavior, binaries and technical structures to understand how software works and where weaknesses may exist.</p></article>
+                    <article class="security-card"><span>02</span><div class="security-icon">⌁</div><h3>Web Penetration Testing</h3><p>Assess web applications and exposed functionality for common and application-specific security weaknesses.</p></article>
+                    <article class="security-card"><span>03</span><div class="security-icon">▣</div><h3>Mobile Penetration Testing</h3><p>Evaluate mobile applications and their supporting interfaces for security issues across the application attack surface.</p></article>
+                    <article class="security-card"><span>04</span><div class="security-icon">◌</div><h3>Digital Forensics</h3><p>Technical examination of digital evidence to help understand incidents, artifacts and relevant system activity.</p></article>
+                </div>
+                <div class="security-callout"><strong>Security-minded development</strong><span>We don't treat security as an afterthought. We design, build and test with a defensive mindset.</span><a href="#contact">Discuss a security assessment →</a></div>
             </div>
-
         </section>
 
+        <section class="section team-section" id="team">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">05 — THE TEAM</span>
+                    <h2>People behind <span>LaySoftware.</span></h2>
+                    <p>A focused team combining engineering, product thinking and growth to turn ideas into products.</p>
+                </div>
+                <div class="team-grid">
+                    <article class="team-card">
+                        <div class="team-photo"><img src="images/cto.png" alt="Eng Walusimbi Rashid Omar, CTO" onerror="this.style.display='none'"><span>WR</span></div>
+                        <div class="team-content"><span class="team-role">CHIEF TECHNOLOGY OFFICER · CTO</span><h3>Eng Walusimbi Rashid Omar</h3><p>Leads technical direction, software architecture, engineering quality and security-focused development across LaySoftware products.</p><div class="team-tags"><span>Engineering</span><span>Architecture</span><span>Security</span></div></div>
+                    </article>
+                    <article class="team-card">
+                        <div class="team-photo"><img src="images/pm.png" alt="Ssenoga Shafick, Product Manager" onerror="this.style.display='none'"><span>SS</span></div>
+                        <div class="team-content"><span class="team-role">PRODUCT MANAGER</span><h3>Ssenoga Shafick</h3><p>Shapes product requirements, user experiences, roadmaps and delivery priorities so useful ideas become focused products.</p><div class="team-tags"><span>Product</span><span>Roadmaps</span><span>UX</span></div></div>
+                    </article>
+                    <article class="team-card">
+                        <div class="team-photo"><img src="images/gm.png" alt="Nakimuli Shirat, Growth Marketer" onerror="this.style.display='none'"><span>NS</span></div>
+                        <div class="team-content"><span class="team-role">GROWTH MARKETER</span><h3>Nakimuli Shirat</h3><p>Drives product visibility, audience growth, launch communication and customer-focused marketing for LaySoftware products.</p><div class="team-tags"><span>Growth</span><span>Marketing</span><span>Launches</span></div></div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <!-- Contact -->
+        <section class="section technology" id="technology">
+            <div class="container tech-content">
+                <div>
+                    <span class="section-label">06 — TECHNOLOGY</span>
+                    <h2>Modern tools.<br><span>Practical engineering.</span></h2>
+                    <p>We select technologies according to the product, platform and problem — with a strong focus on maintainability, performance and useful user experiences.</p>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-item"><strong>Flutter</strong><span>Cross-platform mobile development</span></div>
+                    <div class="tech-item"><strong>Unity</strong><span>Game development</span></div>
+                    <div class="tech-item"><strong>Godot</strong><span>Game development & prototypes</span></div>
+                    <div class="tech-item"><strong>Kotlin</strong><span>Android development</span></div>
+                    <div class="tech-item"><strong>Rust</strong><span>Systems & performance tooling</span></div>
+                    <div class="tech-item"><strong>TypeScript</strong><span>Web & application development</span></div>
+                    <div class="tech-item"><strong>Python</strong><span>Automation, tooling & applications</span></div>
+                    <div class="tech-item"><strong>Security tooling</strong><span>Assessment & investigation workflows</span></div>
+                </div>
+            </div>
+        </section>
+
         <section class="section contact" id="contact">
-
             <div class="container">
-
                 <div class="contact-box">
-
                     <div>
-
-                        <span class="section-label">
-                            05 — CONTACT
-                        </span>
-
-                        <h2>
-                            Have an idea?
-                            <span>Let's build it.</span>
-                        </h2>
-
-                        <p>
-                            Follow LaySoftware for updates, new releases,
-                            applications, games and future projects.
-                        </p>
-
+                        <span class="section-label">07 — CONTACT</span>
+                        <h2>Have an idea?<br><span>Let's build it.</span></h2>
+                        <p>Whether you need a mobile app, website, game, CLI tool, business system or security assessment, LaySoftware can help turn a technical idea into a practical next step.</p>
                     </div>
-
-
-                    <div class="contact-links">
-
-                        <a
-                            href="https://github.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            GitHub
-                        </a>
-
-                        <a
-                            href="#"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Google Play
-                        </a>
-
-                        <a
-                            href="mailto:contact@laysoftware.com"
-                        >
-                            Email
-                        </a>
-
+                    <div class="contact-actions">
+                        <a href="mailto:contact@laysoftware.com" class="button primary">Email LaySoftware →</a>
+                        <a href="#apps" class="button secondary">View our products</a>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
     </main>
 
-
-    <!-- Footer -->
     <footer>
-
         <div class="container footer-content">
-
             <div class="footer-brand">
-
                 <span class="logo-mark">L</span>
-
-                <div>
-                    <strong>LaySoftware</strong>
-                    <span>Software, Apps & Games</span>
-                </div>
-
+                <div><strong>LaySoftware</strong><span>Software · Games · Cybersecurity</span></div>
             </div>
-
-            <p>
-                © <span id="year"></span>
-                LaySoftware. All rights reserved.
-            </p>
-
+            <div class="footer-links"><a href="#services">Services</a><a href="#apps">Apps</a><a href="#security">Security</a><a href="#team">Team</a><a href="mailto:contact@laysoftware.com">Contact</a></div>
+            <p>© <span id="year"></span> LaySoftware. All rights reserved.</p>
         </div>
-
     </footer>
 
-
     <script src="script.js"></script>
-
 </body>
 </html>
