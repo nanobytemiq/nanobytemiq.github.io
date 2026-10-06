@@ -127,7 +127,7 @@ if (upcomingContainer) {
       return `
             <article class="product-card">
                 <div class="product-image">
-                    <img src="icons/${icon}.png" alt="${name} app icon" onerror="this.style.display='none'">
+                    <img src="icons/${icon}" alt="${name} app icon" onerror="this.style.display='none'">
                     <span class="fallback-icon">${initials}</span>
                 </div>
                 <div class="product-content">
