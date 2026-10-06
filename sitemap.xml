@@ -1,8 +1,10 @@
-http://laysoftware.com/
-http://laysoftware.com/#home
-http://laysoftware.com/#services
-http://laysoftware.com/#apps
-http://laysoftware.com/#games
-http://laysoftware.com/#security
-http://laysoftware.com/#team
-http://laysoftware.com/#contact
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://laysoftware.com/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+</urlset>
