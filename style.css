@@ -1566,3 +1566,199 @@ footer {
     padding: 32px 22px;
   }
 }
+
+/* ========================================================= CEO RECRUITMENT CARD ========================================================= */
+
+.ceo-card {
+  border-color: rgba(139, 92, 246, 0.3);
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(139, 92, 246, 0.09),
+      transparent 65%
+    ),
+    var(--card);
+}
+
+.ceo-photo {
+  background:
+    radial-gradient(
+      circle at 50% 30%,
+      rgba(139, 92, 246, 0.25),
+      transparent 55%
+    ),
+    linear-gradient(145deg, #171426, #090b10);
+}
+
+.ceo-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.ceo-placeholder span {
+  position: static;
+  font-size: clamp(58px, 7vw, 84px);
+  line-height: 1;
+  letter-spacing: -4px;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--primary-light), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.ceo-placeholder small {
+  color: #9da3b4;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.ceo-open-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 3;
+  padding: 7px 11px;
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  border-radius: 100px;
+  background: rgba(52, 211, 153, 0.12);
+  color: #6ee7b7;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.whatsapp-button {
+  display: flex;
+  width: 100%;
+  margin-top: 22px;
+  gap: 10px;
+  justify-content: center;
+  background: #25d366;
+  color: #052e16;
+  border: 1px solid rgba(37, 211, 102, 0.45);
+}
+
+.whatsapp-button:hover {
+  background: #32e074;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.16);
+}
+
+.whatsapp-icon {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+}
+
+.whatsapp-button:focus-visible {
+  outline: 2px solid #6ee7b7;
+  outline-offset: 4px;
+}
+
+/* Keep the CEO card centered when the team grid has fewer columns. */
+@media (max-width: 1000px) {
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .team-card:last-child {
+    grid-column: auto;
+    max-width: none;
+    justify-self: stretch;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ceo-placeholder span {
+    font-size: 72px;
+  }
+}
+
+/* Fix CEO placeholder and position badge layout */
+.ceo-photo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 15px 25px;
+}
+
+.ceo-photo .ceo-placeholder {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.ceo-photo .ceo-placeholder span {
+  position: static;
+  display: block;
+  font-size: clamp(54px, 6vw, 76px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #b79cff;
+  background: linear-gradient(135deg, #b79cff, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ceo-photo .ceo-placeholder small {
+  position: static;
+  display: block;
+  color: #9da3b4;
+  font-size: 9px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  font-weight: 700;
+  white-space: normal;
+}
+
+.ceo-photo .ceo-open-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding: 6px 10px;
+  font-size: 9px;
+  line-height: 1.4;
+  letter-spacing: 0.7px;
+  font-weight: 800;
+  white-space: nowrap;
+  color: #6ee7b7;
+  background: rgba(52, 211, 153, 0.12);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  border-radius: 100px;
+}
+
+@media (max-width: 380px) {
+  .ceo-photo .ceo-open-badge {
+    top: 10px;
+    right: 10px;
+    font-size: 8px;
+    padding: 5px 7px;
+  }
+
+  .ceo-photo .ceo-placeholder span {
+    font-size: 54px;
+  }
+}
