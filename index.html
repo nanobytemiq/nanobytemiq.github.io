@@ -26,6 +26,45 @@
     <title>LaySoftware — Software, Games & Cybersecurity</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
+
+    <style>
+      .careers-section { position: relative; overflow: hidden; }
+      .careers-summary {
+        display: flex; align-items: center; gap: 1.5rem;
+        padding: 1.35rem 1.5rem; margin: 2rem 0 1.5rem;
+        border: 1px solid rgba(255,255,255,.12); border-radius: 18px;
+        background: linear-gradient(120deg, rgba(117,78,255,.12), rgba(20,184,166,.06));
+      }
+      .careers-summary > div { min-width: 110px; display: flex; flex-direction: column; }
+      .careers-summary strong { font-size: 2rem; line-height: 1.1; }
+      .careers-summary > div span, .careers-summary p, .careers-footnote { color: var(--muted, #a1a1aa); }
+      .careers-summary p { margin: 0; }
+      .careers-filter-note { display: flex; align-items: center; gap: .65rem; margin: 1.5rem 0; color: var(--muted, #a1a1aa); font-size: .92rem; }
+      .openings-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+      .opening-card {
+        display: flex; flex-direction: column; min-width: 0; padding: 1.35rem;
+        border: 1px solid rgba(255,255,255,.11); border-radius: 18px;
+        background: rgba(255,255,255,.025); transition: transform .2s ease, border-color .2s ease, background .2s ease;
+      }
+      .opening-card:hover { transform: translateY(-4px); border-color: rgba(139,92,246,.55); background: rgba(139,92,246,.055); }
+      .opening-card-top { display: flex; justify-content: space-between; align-items: center; gap: .5rem; margin-bottom: 1.1rem; }
+      .opening-index { color: #a78bfa; font-size: .8rem; font-weight: 800; letter-spacing: .08em; }
+      .opening-status { display: inline-flex; align-items: center; gap: .4rem; font-size: .72rem; color: #86efac; white-space: nowrap; }
+      .opening-status span { width: 7px; height: 7px; border-radius: 50%; background: #4ade80; box-shadow: 0 0 10px rgba(74,222,128,.4); }
+      .opening-category { color: var(--muted, #a1a1aa); font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+      .opening-card h3 { margin: .55rem 0 .65rem; font-size: 1.15rem; line-height: 1.35; }
+      .opening-card p { color: var(--muted, #a1a1aa); font-size: .92rem; line-height: 1.65; margin: 0 0 1.25rem; }
+      .opening-apply { display: inline-flex; align-items: center; justify-content: space-between; gap: .75rem; margin-top: auto; padding-top: .9rem; border-top: 1px solid rgba(255,255,255,.09); color: var(--text, #f4f4f5); font-weight: 700; text-decoration: none; }
+      .opening-apply span { color: #a78bfa; font-size: 1.2rem; transition: transform .2s ease; }
+      .opening-apply:hover span { transform: translateX(4px); }
+      .careers-footnote { margin-top: 1.5rem; font-size: .84rem; line-height: 1.6; }
+      @media (max-width: 1000px) { .openings-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+      @media (max-width: 600px) {
+        .openings-grid { grid-template-columns: 1fr; }
+        .careers-summary { align-items: flex-start; flex-direction: column; gap: .75rem; }
+      }
+    </style>
+
   </head>
   <body>
     <header class="navbar">
@@ -41,6 +80,7 @@
           <a href="#games">Games</a>
           <a href="#security">Security</a>
           <a href="#team">Team</a>
+          <a href="#careers">Careers</a>
           <a href="#contact">Contact</a>
         </nav>
         <button
@@ -801,10 +841,288 @@
         </div>
       </section>
 
+
+      <section class="section careers-section" id="careers">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label">06 — CAREERS</span>
+            <h2>Build the future <span>with LaySoftware.</span></h2>
+            <p>
+              Explore opportunities across engineering, game development,
+              cybersecurity, leadership and business growth. Select a role to
+              contact us on WhatsApp and ask about the requirements and application process.
+            </p>
+          </div>
+
+          <div class="careers-summary">
+            <div>
+              <strong>24</strong>
+              <span>Listed opportunities</span>
+            </div>
+            <p>
+              We welcome people who are passionate about building useful software,
+              creating great games, improving digital security and growing technology products.
+            </p>
+          </div>
+
+          <div class="careers-filter-note">
+            <span class="live-dot"></span>
+            <span>Open positions · Four divisions plus executive leadership</span>
+          </div>
+
+          <div class="openings-grid">
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">01</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Core Engineering &amp; Architecture</span>
+              <h3>Lead Architect</h3>
+              <p>Designs foundational software architecture, system integrations and multi-platform infrastructure for scalability and security.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Lead%20Architect%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Lead Architect via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">02</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Core Engineering &amp; Architecture</span>
+              <h3>Software Engineer</h3>
+              <p>Engineers custom software frameworks, developer automation workflows and specialized CLI tools.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Software%20Engineer%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Software Engineer via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">03</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Core Engineering &amp; Architecture</span>
+              <h3>Fullstack Developer</h3>
+              <p>Bridges front-end user experiences with robust back-end systems using modern stacks like Next.js and specialized APIs.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Fullstack%20Developer%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Fullstack Developer via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">04</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Core Engineering &amp; Architecture</span>
+              <h3>App Developer</h3>
+              <p>Builds, optimizes and prepares cross-platform mobile utilities and offline-first Android applications for Google Play.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20App%20Developer%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for App Developer via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">05</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Core Engineering &amp; Architecture</span>
+              <h3>Blockchain Engineer</h3>
+              <p>Develops decentralized infrastructure, smart contracts, DApps and cryptographic assets using high-performance languages like Rust.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Blockchain%20Engineer%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Blockchain Engineer via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">06</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Core Engineering &amp; Architecture</span>
+              <h3>DevOps Engineer</h3>
+              <p>Manages continuous integration, cloud deployments and automated testing pipelines to support application uptime.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20DevOps%20Engineer%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for DevOps Engineer via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">07</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Core Engineering &amp; Architecture</span>
+              <h3>Database Administrator</h3>
+              <p>Optimizes data storage, manages relational structures for business software and maintains complex stock databases.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Database%20Administrator%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Database Administrator via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">08</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Core Engineering &amp; Architecture</span>
+              <h3>Backend Systems Engineer</h3>
+              <p>Focuses on server-side logic, high-throughput microservices and secure endpoint integrations.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Backend%20Systems%20Engineer%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Backend Systems Engineer via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">09</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Gaming &amp; Creative Division</span>
+              <h3>Game Designer</h3>
+              <p>Conceives gameplay mechanics, core logic rules and progression structures for upcoming mobile and arcade titles.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Game%20Designer%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Game Designer via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">10</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Gaming &amp; Creative Division</span>
+              <h3>Gameplay Programmer</h3>
+              <p>Builds responsive interactive worlds using game engines such as Unity and Godot.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Gameplay%20Programmer%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Gameplay Programmer via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">11</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Gaming &amp; Creative Division</span>
+              <h3>Game UI/UX Designer</h3>
+              <p>Creates menus, heads-up displays and seamless navigation interfaces tailored for mobile players.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Game%20UI%2FUX%20Designer%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Game UI/UX Designer via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">12</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Gaming &amp; Creative Division</span>
+              <h3>3D/2D Technical Artist</h3>
+              <p>Creates the assets, animations and environmental sprites that define the look of action and puzzle worlds.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%203D%2F2D%20Technical%20Artist%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for 3D/2D Technical Artist via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">13</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Gaming &amp; Creative Division</span>
+              <h3>Audio Engineer / Sound Designer</h3>
+              <p>Creates atmospheric soundscapes, music and sound effects for digital products.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Audio%20Engineer%20%2F%20Sound%20Designer%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Audio Engineer / Sound Designer via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">14</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Cybersecurity &amp; Intelligence</span>
+              <h3>Web Penetration Tester</h3>
+              <p>Audits web-facing applications to identify security flaws before malicious actors can exploit them.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Web%20Penetration%20Tester%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Web Penetration Tester via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">15</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Cybersecurity &amp; Intelligence</span>
+              <h3>Mobile Penetration Tester</h3>
+              <p>Evaluates security gaps across mobile applications and their interfaces.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Mobile%20Penetration%20Tester%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Mobile Penetration Tester via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">16</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Cybersecurity &amp; Intelligence</span>
+              <h3>Reverse Engineer</h3>
+              <p>Analyzes binaries, software logic and proprietary code to identify deeply embedded vulnerabilities.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Reverse%20Engineer%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Reverse Engineer via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">17</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Cybersecurity &amp; Intelligence</span>
+              <h3>Digital Forensics Investigator</h3>
+              <p>Analyzes security incidents, system artifacts and network activity.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Digital%20Forensics%20Investigator%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Digital Forensics Investigator via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">18</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Cybersecurity &amp; Intelligence</span>
+              <h3>SecOps Auditor</h3>
+              <p>Monitors deployed business software and supports a defensive, compliance-driven engineering lifecycle.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20SecOps%20Auditor%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for SecOps Auditor via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">19</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Growth, Marketing &amp; Strategy</span>
+              <h3>Marketing Manager</h3>
+              <p>Oversees multi-channel campaigns, branding direction and B2B growth strategies.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Marketing%20Manager%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Marketing Manager via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">20</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Growth, Marketing &amp; Strategy</span>
+              <h3>Growth Marketer</h3>
+              <p>Focuses on product user acquisition, launch communications and app-store discoverability.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Growth%20Marketer%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Growth Marketer via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">21</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Growth, Marketing &amp; Strategy</span>
+              <h3>Company Ambassador</h3>
+              <p>Represents LaySoftware at technology events, fosters industry partnerships and builds community awareness.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Company%20Ambassador%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Company Ambassador via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">22</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Growth, Marketing &amp; Strategy</span>
+              <h3>Product Manager</h3>
+              <p>Owns feature roadmaps, aligns design sprints with market demands and coordinates engineering and marketing.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Product%20Manager%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Product Manager via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">23</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Growth, Marketing &amp; Strategy</span>
+              <h3>Business Development Executive</h3>
+              <p>Identifies enterprise opportunities, manages client relationships and drives corporate sales.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Business%20Development%20Executive%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Business Development Executive via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="opening-card">
+              <div class="opening-card-top">
+                <span class="opening-index">24</span>
+                <span class="opening-status"><span></span> Open position</span>
+              </div>
+              <span class="opening-category">Executive Leadership</span>
+              <h3>Chief Executive Officer (CEO)</h3>
+              <p>Shapes company strategy, leads business growth, builds partnerships and guides LaySoftware’s software, games and cybersecurity mission.</p>
+              <a class="opening-apply" href="https://wa.me/256742268342?text=Hello%20LaySoftware%2C%20I%20am%20interested%20in%20applying%20for%20the%20Chief%20Executive%20Officer%20%28CEO%29%20position.%20Please%20share%20the%20requirements%20and%20application%20process." target="_blank" rel="noopener noreferrer" aria-label="Apply for Chief Executive Officer (CEO) via WhatsApp">Enquire / Apply <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+          <p class="careers-footnote">
+            Role details and availability may be confirmed during your enquiry.
+            Contact LaySoftware before sending sensitive personal information.
+          </p>
+        </div>
+      </section>
+
       <section class="section technology" id="technology">
         <div class="container tech-content">
           <div>
-            <span class="section-label">06 — TECHNOLOGY</span>
+            <span class="section-label">07 — TECHNOLOGY</span>
             <h2>Modern tools.<br /><span>Practical engineering.</span></h2>
             <p>
               We select technologies according to the product, platform and
@@ -848,7 +1166,7 @@
         <div class="container">
           <div class="contact-box">
             <div>
-              <span class="section-label">07 — CONTACT</span>
+              <span class="section-label">08 — CONTACT</span>
               <h2>Have an idea?<br /><span>Let's build it.</span></h2>
               <p>
                 Whether you need a mobile app, website, game, CLI tool, business
@@ -879,7 +1197,7 @@
         <div class="footer-links">
           <a href="#services">Services</a><a href="#apps">Apps</a
           ><a href="#security">Security</a><a href="#team">Team</a
-          ><a href="mailto:contact@laysoftware.com">Contact</a>
+          ><a href="#careers">Careers</a><a href="mailto:contact@laysoftware.com">Contact</a>
         </div>
         <p>© <span id="year"></span> LaySoftware. All rights reserved.</p>
       </div>
